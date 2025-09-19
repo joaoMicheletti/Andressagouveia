@@ -13,7 +13,7 @@ button { cursor: pointer; }
 /* Zera estilo padrão dos links e cobre pseudo-classes */
 a, a:link, a:visited, a:hover, a:active {
   text-decoration: none !important;
-  color: inherit !important;
+  
 }
 
 /* âncoras dentro de botões: tornam toda a área clicável */
@@ -99,7 +99,6 @@ html { scroll-behavior: smooth; }
 }
 
 .btnHome {
-  width: auto;
   padding: 10px;
   border-radius: 50px;
   border: none;
@@ -108,7 +107,7 @@ html { scroll-behavior: smooth; }
   font-weight: 600;
 }
 
-#BTN_0 { color: #3b180a; width: 50%; }
+#BTN_0 { color: #3b180a; width: 50%; height: 40px;}
 #BTNHOMEA_0 { color: #efa295; }
 
 #BTN_1 { width: 40%; background-color: #3b180a; color: white; }
@@ -181,9 +180,9 @@ html { scroll-behavior: smooth; }
   display: flex; flex-direction: row; justify-content: space-between;
   font-family: 'Poppins'; font-weight: 600; font-size: 14px; padding-bottom: 30px;
 }
-#BtnSecond_0 { border: none; border-radius: 50px; width: 50%; background-color: #fcffe9; height: 30px; }
-#BtnSecond_0 a { color: #963333; }
-#BtnSecond_1 { border: none; border-radius: 50px; width: 40%; background-color: #963333; height: 30px; }
+#BtnSecond_0 { border: none; border-radius: 50px; width: 50%; background-color: #fcffe9; height: 30px; padding: 5px; }
+#BtnSecond_0 a { color: #c4897e; }
+#BtnSecond_1 { border: none; border-radius: 50px; width: 40%; background-color: #963333; height: 30px; padding: 5px;}
 #BtnSecond_1 a { color: white; }
 
 @media(max-width: 900px){
