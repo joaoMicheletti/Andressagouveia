@@ -6,6 +6,12 @@
   font-weight: normal;
   font-style: normal;
 }
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
 
 *{
     margin: 0;
@@ -53,6 +59,7 @@
     justify-content: space-around;
 }
 #ContentText {
+    padding-top: 90px;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -88,13 +95,18 @@
     font-weight: 600;
 }
 #BTN_0 {
-    background-color: #efa295;
+    
     color: #3b180a;
     width: 50%;
+}#BTN_0 a {
+    color: #efa295;
 }
 #BTN_1 {
     width: 40%;
     background-color: #3b180a;
+    color: white;
+}
+#BTN_1 a {
     color: white;
 }
 #ImgAndressa {
@@ -117,6 +129,13 @@
 /* responsividade section primary*/
 
 @media (max-width: 900px) {
+    #primary {
+    position: relative;   /* cria contexto para o bgRosa */
+    width: 100%;
+    height: auto;
+    background-color: #3b180a;
+    z-index: 1;
+    }
   #primary #barSuperior {
     height: 60px;
   }
@@ -125,11 +144,17 @@
         flex-direction: row;
         width: 90%;
         margin-left: 5%;
-        padding-top: 10px;
-        height: calc(100dvh - 40px); /* 40px = altura da #barSuperior */
+        height: auto; /* 40px = altura da #barSuperior */
+        display: flex;
+        flex-direction: column;
     }
     #ImgAndressa {
-        display: none;
+        width: 100%;
+        display: flex;
+        text-align: center;
+    }
+    #ImgPrincipal {
+        width: 60%;
     }
     #ContentText {
         width: 100%;
@@ -190,7 +215,7 @@
 
 /* container section2*/
 #secondSection{
-    width: 100%;
+    width: 100vw;
     height: auto;
     background-image: url(assets/bgsecondSection.webp);
     background-position: center center;
@@ -198,9 +223,12 @@
     background-clip: cover;
     padding-bottom: 30px;
 }
+
 #ContainerSectionSecond {
     margin-left: 10%;
     width: 80%;
+    display: flex;
+    flex-direction: row;
 }
 #ContainerTextSectionSecond {
     width: 50%;
@@ -243,16 +271,20 @@
     border-radius: 50px;
     width: 50%;
     background-color: #fcffe9;
-    color: #963333;;
     height: 30px;
+}
+#BtnSecond_0 a {
+    color: #963333;;
 }
 #BtnSecond_1{
     border: none;
     border-radius: 50px;
     width: 40%;
     background-color: #963333;
-    color: white;
     height: 30px;
+}
+#BtnSecond_1 a {
+    color: white;
 }
 /*responsividade dos containar na secontsection*/
 
@@ -264,6 +296,17 @@
     #ContainerTextSectionSecond {
         width: 100%;
         padding-top: 100px;
+    }
+    #ContainerTextSectionSecond  h1 {
+        font-size: 43px;
+        color: #efa295;
+        margin-bottom: 20px;
+    }
+    .corpoH1SecrtionSecond {
+        font-family: 'Montrchi';
+        color: white;
+        font-size: 15px;
+        margin-bottom: 20px;
     }
     .ImgIconTxt {
         margin-right: 5px;
@@ -284,7 +327,6 @@
 }
 #coroaVideo img {
     width: 60%;
-    margin-bottom: -2px;
 }
 #Video {
     display: flex;
@@ -302,7 +344,6 @@
         width: 90%;
     }
    #ThisIsThaVideo{
-        margin-top: -118px;
         width: 100%;
         border-radius: 20px;
     } 
@@ -464,12 +505,12 @@
 #QuemConduz{
     width: 100%;
     height: auto;
+    padding-top: 100px;
     background-image: url(assets/conduz.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-clip: cover;
-    padding-bottom: 100px;
-    padding: 10px;
+    padding-bottom: 150px;
 }
 #QuemConduzContainer{
     width: 80%;
@@ -511,11 +552,17 @@ DD{
 #btnConduz_0 {
     width: 40%;
     background-color: white;
+    
+}
+#btnConduz_0 a {
     color: #963333;
 }
 #btnConduz_1 {
     width: 30%;
     background-color: #963333;
+    
+}
+#btnConduz_1 a {
     color: #fffafa;
 }
 /*style quem conduz responsividade*/
@@ -524,14 +571,14 @@ DD{
         background-color: #33170c;
     }
     #QuemConduzContainer{
-        width: 100%;
-        margin-left: 0%;
+        width: 90%;
+        margin-left: 5%;
     }
     #ContainerQuemConduz {
-        width: 100%;    
+        width: 100%; 
     }
     #TitleQuemConduz{
-        font-size: 63px;
+        font-size: 53px;
         color: #efa295;
         padding-bottom: 30px;
     }
@@ -634,7 +681,7 @@ DD{
         border-radius: 10px;
         padding: 20px;
         text-align: center;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
     }
     .corpoFeedBack {
         font-size: 18px;
@@ -716,11 +763,17 @@ DD{
 #btnB_0{
     width: 50%;
     background-color: white;
+    
+}
+#btnB_0 a {
     color: #963333;
 }
 #btnB_1{
     width: 40%;
     background-color: #963333;
+    
+}
+#btnB_1 a {
     color: #ffffff;
 }
 
